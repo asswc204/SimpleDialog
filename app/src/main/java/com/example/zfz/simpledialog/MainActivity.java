@@ -4,7 +4,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import com.example.zfz.simpledialog.dialog.SimpleTipDialog;
+import com.example.dialoglibrary.SimpleTipDialog;
+
 
 public class MainActivity extends AppCompatActivity {
 
