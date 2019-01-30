@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/shape_corner_ten_white_bg"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/mTitleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="提示"
+            android:textColor="@color/text_default_d"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/mContentTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="提示"
+            android:textColor="@color/text_default_d"
+            android:textSize="13sp" />
+
+        <View
+            style="@style/h_divider"
+            android:layout_marginTop="20dp" />
+
+        <LinearLayout
+            android:id="@+id/layout_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/mNavTv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/cancel"
+                android:textColor="@color/btn_blue"
+                android:textSize="17sp" />
+
+            <View style="@style/v_divider" />
+
+            <TextView
+                android:id="@+id/mPosTv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/confirm"
+                android:textColor="@color/btn_blue"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
