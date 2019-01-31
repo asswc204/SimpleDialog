@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
 
@@ -13,8 +14,25 @@
         android:gravity="center"
         android:orientation="vertical">
 
-        <TextView
+        <com.devspark.robototextview.widget.RobotoTextView
             android:id="@+id/mTitleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/dialog_content"
+            android:textSize="16sp"
+            android:visibility="gone"
+            app:robotoTypeface="roboto_medium" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="提示"
+            android:textColor="@color/dialog_content"
+            android:textSize="16sp" />
+
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -24,6 +42,23 @@
             android:textStyle="bold" />
 
         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="提示"
+            android:textColor="@color/dialog_content"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="提示"
+            android:textColor="@color/dialog_content"
+            android:textSize="17sp" />
+
+        <TextView
             android:id="@+id/mContentTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -31,9 +66,9 @@
             android:layout_marginRight="16dp"
             android:layout_marginTop="10dp"
             android:gravity="center"
-            android:text="提示"
             android:textColor="@color/dialog_content"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            android:visibility="gone" />
 
         <View
             style="@style/h_divider"
@@ -61,7 +96,7 @@
                 style="@style/v_divider"
                 android:visibility="gone" />
 
-            <TextView
+            <com.devspark.robototextview.widget.RobotoTextView
                 android:id="@+id/mPosTv"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -70,7 +105,7 @@
                 android:text="@string/confirm"
                 android:textColor="@color/common_blue_color"
                 android:textSize="16sp"
-                android:textStyle="bold" />
+                app:robotoTypeface="roboto_medium" />
 
         </LinearLayout>
     </LinearLayout>

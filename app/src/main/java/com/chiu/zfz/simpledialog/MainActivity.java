@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void showTipsdialog(View view) {
-        new SimpleTipDialog(this).builder().show();
+        new SimpleTipDialog(this).setTitle("提示").setMsg("内容内容").show();
     }
 
 }

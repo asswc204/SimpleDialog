@@ -6,7 +6,6 @@ import android.support.annotation.ColorInt;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.util.TypedValue;
-import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
@@ -81,11 +80,13 @@ public class SimpleTipDialog implements View.OnClickListener {
     }
 
     public SimpleTipDialog setTitle(@NonNull String titleText) {
+        mTitleTv.setVisibility(View.VISIBLE);
         mTitleTv.setText(titleText);
         return this;
     }
 
     public SimpleTipDialog setMsg(@NonNull String msg) {
+        mContentTv.setVisibility(View.VISIBLE);
         mContentTv.setText(msg);
         return this;
     }
