@@ -9,5 +9,5 @@ allprojects {
   
   Step 2. Add the dependency
   	dependencies {
-	        implementation 'com.github.asswc204:SimpleDialog:Tag'
+	        implementation 'com.github.chiu14578:SimpleDialog:1.0.6'
 	}
