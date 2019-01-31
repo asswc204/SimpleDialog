@@ -79,12 +79,14 @@ public class SimpleTipDialog implements View.OnClickListener {
         return this;
     }
 
-    public void setTitle(@NonNull String titleText) {
+    public SimpleTipDialog setTitle(@NonNull String titleText) {
         mTitleTv.setText(titleText);
+        return this;
     }
 
-    public void setMsg(@NonNull String msg) {
+    public SimpleTipDialog setMsg(@NonNull String msg) {
         mContentTv.setText(msg);
+        return this;
     }
 
     public SimpleTipDialog setPosButtonText(@NonNull String posText, @Nullable onButtonClickListener posClickListener) {
