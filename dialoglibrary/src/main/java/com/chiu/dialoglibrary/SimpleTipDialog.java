@@ -31,6 +31,7 @@ public class SimpleTipDialog implements View.OnClickListener {
 
     public SimpleTipDialog(Context context) {
         this.context = context;
+        builder();
     }
 
     /**
@@ -38,7 +39,7 @@ public class SimpleTipDialog implements View.OnClickListener {
      *
      * @return SimpleTipDialog
      */
-    public SimpleTipDialog builder() {
+    public void builder() {
         dialog = new Dialog(context, R.style.FullDialog);
         View view = LayoutInflater.from(context).inflate(R.layout.dialog_simple_tip, null);
         mTitleTv = view.findViewById(R.id.mTitleTv);
@@ -49,7 +50,6 @@ public class SimpleTipDialog implements View.OnClickListener {
         dialog.setContentView(view);
         mPosTv.setOnClickListener(this);
         mNavTv.setOnClickListener(this);
-        return this;
     }
 
     @Override
