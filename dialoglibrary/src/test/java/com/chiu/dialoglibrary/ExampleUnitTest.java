@@ -1,4 +1,4 @@
-package com.example.dialoglibrary;
+package com.chiu.dialoglibrary;
 
 import org.junit.Test;
 

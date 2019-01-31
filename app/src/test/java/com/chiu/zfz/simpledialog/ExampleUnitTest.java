@@ -1,4 +1,4 @@
-package com.example.zfz.simpledialog;
+package com.chiu.zfz.simpledialog;
 
 import org.junit.Test;
 

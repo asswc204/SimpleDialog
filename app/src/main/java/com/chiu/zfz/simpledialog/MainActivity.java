@@ -1,10 +1,10 @@
-package com.example.zfz.simpledialog;
+package com.chiu.zfz.simpledialog;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import com.example.dialoglibrary.SimpleTipDialog;
+import com.chiu.dialoglibrary.SimpleTipDialog;
 
 
 public class MainActivity extends AppCompatActivity {

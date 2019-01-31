@@ -1,4 +1,4 @@
-package com.example.zfz.simpledialog;
+package com.chiu.dialoglibrary;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.zfz.simpledialog", appContext.getPackageName());
+        assertEquals("com.chiu.dialoglibrary.test", appContext.getPackageName());
     }
 }

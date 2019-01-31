@@ -52,9 +52,13 @@
                 android:gravity="center"
                 android:text="@string/cancel"
                 android:textColor="@color/btn_blue"
-                android:textSize="17sp" />
+                android:textSize="17sp"
+                android:visibility="gone" />
 
-            <View style="@style/v_divider" />
+            <View
+                android:id="@+id/mBottomDivider"
+                style="@style/v_divider"
+                android:visibility="gone" />
 
             <TextView
                 android:id="@+id/mPosTv"
