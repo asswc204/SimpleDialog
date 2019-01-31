@@ -19,8 +19,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:text="提示"
-            android:textColor="@color/text_default_d"
-            android:textSize="17sp" />
+            android:textColor="@color/dialog_content"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/mContentTv"
@@ -31,8 +32,8 @@
             android:layout_marginTop="10dp"
             android:gravity="center"
             android:text="提示"
-            android:textColor="@color/text_default_d"
-            android:textSize="13sp" />
+            android:textColor="@color/dialog_content"
+            android:textSize="14sp" />
 
         <View
             style="@style/h_divider"
@@ -51,8 +52,8 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="@string/cancel"
-                android:textColor="@color/btn_blue"
-                android:textSize="17sp"
+                android:textColor="@color/common_tip_color"
+                android:textSize="16sp"
                 android:visibility="gone" />
 
             <View
@@ -67,8 +68,9 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="@string/confirm"
-                android:textColor="@color/btn_blue"
-                android:textSize="17sp" />
+                android:textColor="@color/common_blue_color"
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
         </LinearLayout>
     </LinearLayout>
