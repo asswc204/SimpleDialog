@@ -6,6 +6,7 @@ import android.support.annotation.ColorInt;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.util.TypedValue;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
@@ -13,7 +14,7 @@ import android.widget.TextView;
 
 /**
  * Created by zfz on 2019/1/30.
- * simple tips dialog(imitate ios)
+ * simple tips dialog
  */
 
 public class SimpleTipDialog implements View.OnClickListener {
@@ -57,11 +58,11 @@ public class SimpleTipDialog implements View.OnClickListener {
         int i = v.getId();
         if (i == R.id.mPosTv)
             if (posClickListener != null)
-                posClickListener.onButtonClick();
+                posClickListener.onButtonClick(dialog);
             else dismiss();
         else if (i == R.id.mNavTv)
             if (navClickListener != null)
-                navClickListener.onButtonClick();
+                navClickListener.onButtonClick(dialog);
             else dismiss();
     }
 
@@ -73,7 +74,7 @@ public class SimpleTipDialog implements View.OnClickListener {
         if (dialog != null && dialog.isShowing()) dialog.dismiss();
     }
 
-    public SimpleTipDialog setCanceledOnTouchOutside(boolean canceledOnTouchOutside) {
+    public SimpleTipDialog setCancelable(boolean canceledOnTouchOutside) {
         dialog.setCancelable(canceledOnTouchOutside);
         dialog.setCanceledOnTouchOutside(canceledOnTouchOutside);
         return this;
@@ -142,6 +143,6 @@ public class SimpleTipDialog implements View.OnClickListener {
     }
 
     public interface onButtonClickListener {
-        void onButtonClick();
+        void onButtonClick(Dialog dialog);
     }
 }
