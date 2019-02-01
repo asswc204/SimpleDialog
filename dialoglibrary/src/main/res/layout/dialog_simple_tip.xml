@@ -14,49 +14,15 @@
         android:gravity="center"
         android:orientation="vertical">
 
-        <com.devspark.robototextview.widget.RobotoTextView
+        <TextView
             android:id="@+id/mTitleTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:textColor="@color/dialog_content"
             android:textSize="16sp"
-            android:visibility="gone"
-            app:robotoTypeface="roboto_medium" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="提示"
-            android:textColor="@color/dialog_content"
-            android:textSize="16sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="提示"
-            android:textColor="@color/dialog_content"
-            android:textSize="16sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="提示"
-            android:textColor="@color/dialog_content"
-            android:textSize="15sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="提示"
-            android:textColor="@color/dialog_content"
-            android:textSize="17sp" />
+            android:textStyle="bold"
+            android:visibility="gone" />
 
         <TextView
             android:id="@+id/mContentTv"
