@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void showTipsdialog(View view) {
-        new SimpleTipDialog(this).setTitle("温馨提示").setMsg("您的配件额度不足，您可以通过缴纳\n" +
+        new SimpleTipDialog(this).setTitle("温馨提示").setContent("您的配件额度不足，您可以通过缴纳\n" +
                 "保证金的方式来增加配件额度 ").setNavButtonText("仍要申请", null).
                 setPosButtonText("一键退配", null).show();
     }

@@ -85,9 +85,9 @@ public class SimpleTipDialog implements View.OnClickListener {
         return this;
     }
 
-    public SimpleTipDialog setMsg(@NonNull String msg) {
+    public SimpleTipDialog setContent(@NonNull String content) {
         mContentTv.setVisibility(View.VISIBLE);
-        mContentTv.setText(msg);
+        mContentTv.setText(content);
         return this;
     }
 
